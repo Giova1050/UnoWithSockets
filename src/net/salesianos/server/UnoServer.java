@@ -7,7 +7,7 @@ import java.util.*;
 import net.salesianos.client.Deck;
 
 public class UnoServer {
-    private static final int PORT = 12345;
+    private static final int PORT = 8085;
     public static Deck deck = new Deck();
     private static List<ClientHandler> players = Collections.synchronizedList(new ArrayList<>());
     private static String currentCard;
