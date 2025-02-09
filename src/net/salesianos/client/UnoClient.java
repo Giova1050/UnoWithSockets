@@ -12,7 +12,6 @@ public class UnoClient {
 
             System.out.println("Conectado al servidor UNO.");
 
-            // Hilo para recibir mensajes del servidor
             new Thread(() -> {
                 try {
                     String serverMessage;
@@ -24,7 +23,7 @@ public class UnoClient {
                 }
             }).start();
 
-            // Enviar mensajes al servidor
+
             while (true) {
                 System.out.println("Escribe tu carta a jugar o escribe 'salir' para terminar: \n");
                 String input = userInput.readLine();
